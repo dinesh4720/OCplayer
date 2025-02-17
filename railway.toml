@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "cd backend && pip install -r requirements.txt"
+
+[deploy]
+startCommand = "cd backend && gunicorn backend:app"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+
+[nixpacks]
+workdir = "backend" 
