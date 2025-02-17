@@ -1,0 +1,17 @@
+{
+    "name": "youtube-audio-player",
+    "version": "1.0.0",
+    "description": "Electron UI with Python backend for YouTube audio playback",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "dependencies": {
+        "@electron/remote": "^2.1.2",
+        "ytdl-core": "^4.11.5",
+        "ytsr": "^3.8.4"
+    },
+    "devDependencies": {
+        "electron": "^25.0.0"
+    }
+}

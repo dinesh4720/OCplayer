@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OC Player</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjQuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMDMtMTNUMTY6NDc6NDctMDQ6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMDMtMTNUMTY6NDc6NDctMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTAzLTEzVDE2OjQ3OjQ3LTA0OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ZDM0ZmQ1LTU0ZDAtNDI0ZC1hMjBhLTY2ZTM0ZWQ5ZjZhYyIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjVhZjJiZjY3LTY5ZDAtYzU0Yy1hZDJiLTFiYzQ3ZjM3ZjZhYiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjY5ZDM0ZmQ1LTU0ZDAtNDI0ZC1hMjBhLTY2ZTM0ZWQ5ZjZhYyIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ZDM0ZmQ1LTU0ZDAtNDI0ZC1hMjBhLTY2ZTM0ZWQ5ZjZhYyIgc3RFdnQ6d2hlbj0iMjAyNC0wMy0xM1QxNjo0Nzo0Ny0wNDowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+YjF8rwAABGlJREFUWIW1l11sFFUUx3/nzuxud7vb7X5QWqhQPkpbLFBEQTQxwQQTjIlR4osPaqLxwQQTNfHrwQcfNDHBxGh8wGh8wAQjJCYYNUETNDGiGFBAKYXyUWgLtNB2u9vd7c7szNx7fJiZ3dntFyhQ/Scne+/MnHP+c+455557R+i6zv+J0P8lgKqqKIqCJEm4rotpmhiGQTqdRtM0LMvCcRwkScJ1XSRJ4n4QQiDLMoqiEIlEiMViRKNR4vE4qqoSCoVQVRVZlpEkCVmWEUIQBHEfAZqmkclkSKfTpFIpUqkUmqaRzWYxTRPXdXFdF13XcRwHIQSyLKMoCuFwmHA4TDQaJRaLEY/HSSQSxONxotEokUiEUChEKBRCURQkSbpLQFABQghs28YwDHRdJ5vNks1m0XUd0zSxLAvbtnEcB9d1cV0XIQSKohAKhQiFQkQiEaLRKPF4nEQiQSKRIB6PE41GiUQihMNhVFVFluU7IvQgAa7r4jgOtm1jWRaWZWFZFo7j4DgOjuPgui6u6+I4DrIsEwqFUFWVcDhMJBIhEokQjUaJxWLEYjGi0SiRSARVVVFVFUVRkGUZIcRtEQUCXNfFtm0Mw0DXdTKZDJlMBl3XMQwDy7KwbRvHcXBdF9/3kWUZRVFQVZVwOEw0GiUejxOPx0kkEsRiMWKxGJFIhHA4jKqqKIqCJEn3RAD4vo9t25imia7rZLNZMpkMuq5jGAamaWLbNo7jBBB+3oIQ+L6PqqrEYjESiQTJZJJkMkkikSAWixGNRgmHw6iqiqIoyLJ8XwIAXNfFsiwMw0DXdbLZLLquYxgGpmliWRa2beM4Dr7v4/s+QghkWUZRFMLhMNFolFgsRjweJx6Pk0gkiMfjRKNRwuEwqqoGEPcS4Ps+tm1jmiamaaLrOtlsFl3XMQwD0zSxLAvbtnEcB8/z8DwP3/cRQqAoCqqqEolEiEajxGIxYrEY8XiceDxOLBYjHA4TCoVQFAVZlpEk6d4EeJ6HZVkYhoGu62QyGXRdxzAMTNPEsixs28bzPHzfx/M8fN9HCIGiKKiqSigUQlVVVFVFURQkSUIIgRACIUSBAN/3sW0b0zQxDINMJkMmkyGdTmMYBpZlYVkWtm3jeR6e5+H7Pp7nBRCqqhIKhVBVFUVRkCQJIQRCCIQQCCEKBPi+j23bmKaJYRhks1nS6TTpdBrTNLEsC8uysG0bz/PwfR/P8/B9HyEEiqIQCoVQVRVFUZAkCSEEQgiEEAghbhPwL0XHBwk1ZpqxAAAAAElFTkSuQmCC">
+</head>
+<body>
+  <div id="mainView" class="container">
+    <div class="search-bar">
+      <input type="text" id="url" class="search-input" placeholder="Paste YouTube URL...">
+      <button class="search-button" id="searchBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="recently-added">
+      <h2>Recently Added</h2>
+      <div id="recentlyAddedSection"></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="queue">Queue</button>
+      <button class="tab-btn" data-tab="all">Saved Tracks</button>
+      <button class="tab-btn" data-tab="trending">Trending</button>
+    </div>
+
+    <div class="tab-content active" id="queueTab"></div>
+    <div class="tab-content" id="allTab"></div>
+    <div class="tab-content" id="trendingTab">
+      <div class="trending-header">
+        <h2 class="trending-title">Trending Music</h2>
+      </div>
+      <div class="trending-grid"></div>
+    </div>
+  </div>
+
+  <div id="playlistView" class="container" style="display: none;">
+    <div class="playlist-detail-view">
+      <div class="playlist-detail-header">
+        <button class="back-button" id="backBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/>
+          </svg>
+          Back
+        </button>
+      </div>
+      <div class="playlist-detail-content">
+        <div class="playlist-info-section">
+          <div class="playlist-thumbnails-container" id="playlistThumbnails"></div>
+          <h2 class="playlist-title" id="playlistTitle"></h2>
+          <div class="playlist-track-count" id="playlistTrackCount"></div>
+        </div>
+        <div class="playlist-tracks-section">
+          <div class="track-list" id="playlistTracks"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottomPlayer" class="bottom-player" style="display: none;">
+    <div class="progress-bar">
+      <div class="progress-bar-container">
+        <div class="progress-bar-current"></div>
+      </div>
+      <div class="time-display">
+        <span id="currentTime">0:00</span>
+        <span id="totalTime">0:00</span>
+      </div>
+    </div>
+    <div class="mini-player">
+      <div class="now-playing-info">
+        <img id="currentThumbnail" class="track-thumbnail" src="" alt="Current track">
+        <div class="track-info">
+          <div id="currentTitle" class="track-title">No track playing</div>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="playback-controls">
+          <button id="prevTrackBtn" class="control-btn" data-tooltip="Previous Track" aria-label="Play previous track">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+            </svg>
+          </button>
+          
+          <button id="togglePlayBtn" class="control-btn" data-tooltip="Play/Pause" aria-label="Play or pause track">
+            <svg id="toggleIcon" width="24" height="24" viewBox="0 0 24 24">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </button>
+          
+          <button id="nextTrackBtn" class="control-btn" data-tooltip="Next Track" aria-label="Play next track">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+            </svg>
+          </button>
+          
+          <button id="loopBtn" class="control-btn" data-tooltip="Loop Track" aria-label="Toggle track loop">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+            </svg>
+          </button>
+        </div>
+      
+      </div>
+      <div class="volume-control">
+        <button id="volumeBtn" class="control-btn">
+          <svg id="volumeIcon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          </svg>
+        </button>
+        <div class="volume-slider-container">
+          <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <div class="playlist-overlay"></div>
+  <div class="playlist-panel">
+    <div class="playlist-panel-header">
+      <button class="playlist-panel-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </button>
+      <h2 class="playlist-panel-title"></h2>
+    </div>
+    <div class="playlist-panel-content">
+      <div class="playlist-thumbnails-container"></div>
+      <div class="playlist-info">
+        <div class="playlist-track-count"></div>
+        <div class="playlist-duration"></div>
+      </div>
+      <div class="playlist-tracks"></div>
+    </div>
+  </div>
+
+  <script src="js/web.js"></script>
+</body>
+</html>
