@@ -8,4 +8,4 @@ healthcheckPath = "/"
 healthcheckTimeout = 100
 
 [nixpacks]
-workdir = "backend" 
+workdir = "backend"
